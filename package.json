@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test sequelize db:migrate:undo:all && NODE_ENV=test sequelize db:migrate && jest --forceExit",
+    "test": "NODE_ENV=test sequelize db:migrate:undo:all && NODE_ENV=test sequelize db:migrate && jest ",
     "start": "node src/server.js"
   },
   "repository": {
@@ -20,8 +20,11 @@
   "dependencies": {
     "hapi": "^16.6.2",
     "pg": "^7.4.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
     "sequelize": "^4.32.6",
-    "sequelize-cli": "^3.2.0"
+    "sequelize-cli": "^3.2.0",
+    "wreck": "^14.0.2"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
