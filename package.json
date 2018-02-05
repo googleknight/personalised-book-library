@@ -1,0 +1,31 @@
+{
+  "name": "personalised-book-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test sequelize db:migrate:undo:all && NODE_ENV=test sequelize db:migrate && jest --forceExit",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/googleknight/personalised-book-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/googleknight/personalised-book-library/issues"
+  },
+  "homepage": "https://github.com/googleknight/personalised-book-library#readme",
+  "dependencies": {
+    "hapi": "^16.6.2",
+    "pg": "^7.4.1",
+    "sequelize": "^4.32.6",
+    "sequelize-cli": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^22.1.4"
+  }
+}
